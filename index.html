@@ -3,35 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Portal</title>
+    <title>Player Portal - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="topbar">
-        <h1>Player Portal</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="popular-games.html">Popular Games</a>
-            <a href="upload.html">Upload</a>
-        </nav>
-    </div>
-    <main>
-        <div class="game">
-            <img class="thumbnail" src="game1.jpg" alt="Game 1">
-            <h2>Game 1</h2>
-            <button class="download-btn" data-game="game1">Download</button>
-        </div>
-        <div class="game">
-            <img class="thumbnail" src="game2.jpg" alt="Game 2">
-            <h2>Game 2</h2>
-            <button class="download-btn" data-game="game2">Download</button>
-        </div>
-        <!-- Add more games as needed -->
-    </main>
-    <script src="script.js"></script>
-    <script src="popularGames.js"></script>
-    <script src="games.js"></script>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="popular.html">Popular Games</a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <!-- Main games will be added here by JavaScript code -->
+    </main>
+
+    <script src="main.js"></script>
+    <script src="popularGames.js"></script>
+
+    <script>
+        // Function to create a game element
+        function createGameElement(game) {
+            const gameDiv = document.createElement('div');
+        
+            const img = document.createElement('img');
+            img.src = game.image;
+            gameDiv.appendChild(img);
+
+            const title = document.createElement('h2');
+            title.textContent = game.name;
+            gameDiv.appendChild(title);
+
+            const button = document.createElement('button');
+            button.textContent = 'Download';
+            button.className = 'download-button';
+            button.onclick = () => {
+                window.location.href = game.downloadLink;
+            };
+            gameDiv.appendChild(button);
+
+            return gameDiv;
+        }
+
+        // Function to populate games
+        function populateGames(gamesArray) {
+            const main = document.querySelector('main');
+            main.innerHTML = ''; // Clear out any old games
+
+            for (const game of gamesArray) {
+                const gameElement = createGameElement(game);
+                main.appendChild(gameElement);
+            }
+        }
+
+        // Determine which page we're on
+        const path = window.location.pathname;
+
+        if (path === '/index.html' || path === '/') {
+            // We're on the home page, so load the main games
+            populateGames(mainGames);
+        } else if (path === '/popular.html') {
+            // We're on the popular games page, so load the popular games
+            populateGames(popularGames);
+        }
+    </script>
 
 </body>
 </html>
