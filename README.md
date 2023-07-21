@@ -1,4 +1,4 @@
 # Player Portal
-Upload, Share, Download Games
-Have Fun Playing
-Insperation From Steam
+Upload, Share, Download Games. 
+Have Fun Playing Your Mighty Games. 
+Insperation From Steam. 
