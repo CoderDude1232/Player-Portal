@@ -23,6 +23,17 @@ body {
     margin-left: 20px;
 }
 
-main {
+.main {
     padding: 20px;
+}
+
+.game {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: auto;
 }
