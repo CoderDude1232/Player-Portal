@@ -4,6 +4,19 @@
     <title>Player Portal</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="main.js" defer></script>
+    <script src="main.js"></script>
+<script>
+  games.forEach((game, index) => {
+    document.getElementById('games').innerHTML +=
+      `<div class="game">
+        <img src="${game.thumbnail}" alt="${game.title}">
+        <h2>${game.title}</h2>
+        <p>${game.description}</p>
+        <button onclick="location.href='gameInfo.html?game=${index}'">View</button>
+       </div>`;
+  });
+</script>
+
     <script src="popularGames.js" defer></script>
     <script src="script.js" defer></script>
 </head>
@@ -11,7 +24,6 @@
     <nav id="navbar">
         <a href="index.html">Home</a>
         <a href="popular.html">Most Popular</a>
-        <a href="info.html">Game Info</a>
     </nav>
 
     <h1>Welcome to Player Portal</h1>
