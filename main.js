@@ -1,0 +1,22 @@
+const games = [
+  {title: 'Apex Legends', description: 'Free-to-play battle royale hero shooter game.', thumbnail: 'apexlegends.jpg'},
+  {title: 'Among Us', description: 'An online multiplayer party game of teamwork and betrayal!', thumbnail: 'amongus.jpg'},
+  {title: 'Animal Crossing: New Horizons', description: 'Escape to a deserted island and create your own paradise as you explore, create, and customize.', thumbnail: 'animalcrossing.jpg'},
+  {title: 'Call of Duty: Warzone', description: 'Free-to-play battle royale video game released on March 10, 2020.', thumbnail: 'callofduty.jpg'},
+  {title: 'Cyberpunk 2077', description: 'Open-world, action-adventure story set in Night City, a city obsessed with power, glamour and body modification.', thumbnail: 'cyberpunk2077.jpg'},
+  {title: 'Doom Eternal', description: 'The ultimate combination of speed and power with the next leap in push-forward, first-person combat.', thumbnail: 'doometernal.jpg'},
+  {title: 'Elden Ring', description: 'Upcoming action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment.', thumbnail: 'eldenring.jpg'},
+  {title: 'Final Fantasy VII Remake', description: 'A reimagining of the original game that re-defines the genre for a new generation.', thumbnail: 'finalfantasyvii.jpg'},
+  {title: 'Fortnite', description: 'Survive the Storm and Save the World. Build forts, craft exotic weapons and find loot.', thumbnail: 'fortnite.jpg'},
+  {title: 'Ghost of Tsushima', description: 'Set out on an open-world adventure and wage war against the Mongol Empire.', thumbnail: 'ghostoftsushima.jpg'},
+  {title: 'God of War', description: 'Third-person action-adventure video game developed by Santa Monica Studio.', thumbnail: 'godofwar.jpg'},
+  {title: 'Hades', description: 'God-like rogue-like dungeon crawler that combines the best aspects of Supergiant Games\'s critically acclaimed titles.', thumbnail: 'hades.jpg'},
+  {title: 'Half-Life: Alyx', description: 'Valve’s VR return to the Half-Life series.', thumbnail: 'halflifealyx.jpg'},
+  {title: 'Horizon Zero Dawn', description: 'A post-apocalyptic world where nature has reclaimed the ruins of a forgotten civilization.', thumbnail: 'horizonzerodawn.jpg'},
+  {title: 'League of Legends', description: 'Team-based strategy game where two teams of five powerful champions face off to destroy the other’s base.', thumbnail: 'leagueoflegends.jpg'},
+  {title: 'Minecraft', description: 'Explore randomly generated worlds and build amazing things from the simplest of homes to the grandest of castles.', thumbnail: 'minecraft.jpg'},
+  {title: 'The Last of Us Part II', description: 'Experience the emotional story of Ellie and Abby in the post-apocalyptic United States.', thumbnail: 'thelastofus2.jpg'},
+  {title: 'Overwatch', description: 'Team-based multiplayer first-person shooter developed and published by Blizzard Entertainment.', thumbnail: 'overwatch.jpg'},
+  {title: 'Roblox', description: 'Online platform that lets you create and play games designed by other users.', thumbnail: 'roblox.jpg'},
+  {title: 'Valorant', description: 'Free-to-play first-person hero shooter developed and published by Riot Games.', thumbnail: 'valorant.jpg'}
+];
