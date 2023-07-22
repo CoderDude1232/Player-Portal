@@ -1,63 +1,73 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-#navbar {
-  background-color: #333;
-  color: white;
-  padding: 15px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-#navbar a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
+.navbar .brand-title {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
 }
 
-#games .game {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 15px;
-  background-color: white;
+.navbar-links {
+    list-style: none;
 }
 
-.game img {
-  width: 100%;
+.navbar-links ul {
+    display: flex;
 }
 
-.game button {
-  background-color: #008CBA;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.navbar-links ul li {
+    margin-left: 20px;
 }
 
-#game-info {
-  padding: 15px;
-  margin: 15px;
-  background-color: white;
+.navbar-links ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
-#game-info img {
-  width: 100%;
+.toggle-button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5em;
 }
 
-#game-info button {
-  background-color: #008CBA;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.main {
+    margin: 20px;
+}
+
+#games-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.game-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
