@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="upload.html">Upload</a>
+  </nav>
 
+  <div id="game-info"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameIndex = urlParams.get('game');
+    const game = games[gameIndex];
+
+    document.getElementById('game-info').innerHTML = 
+      `<img src="${game.thumbnail}" alt="${game.title}">
+       <h2>${game.title}</h2>
+       <p>${game.description}</p>
+       <p>${game.detail}</p>
+       <button onclick="location.href='${game.downloadLink}'">Download</button>`;
+  </script>
+</body>
+</html>
